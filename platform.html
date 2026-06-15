@@ -3,74 +3,128 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#06080D"/>
 <title>Platform — Laurentia</title>
 <meta name="description" content="The shared foundation — sovereign cloud, security baseline, compliance, talent — that every Laurentia venture inherits."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Jura:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/laurentia.css"/>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="index.html" class="brand" aria-label="Laurentia home"><svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
-<circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
-<circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
-<circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/></svg><span class="wm">LAURENTIA</span></a>
-    <nav class="nav-links" id="navlinks"><a href="index.html">Home</a><a href="thesis.html">Thesis</a><a href="ventures.html">Ventures</a><a href="platform.html" aria-current="page">Platform</a><a href="contact.html">Contact</a></nav>
+    <a href="index.html" class="brand" aria-label="Laurentia home">
+      <svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
+        <circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
+        <circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/>
+      </svg>
+      <span class="wm">LAURENTIA</span>
+    </a>
+    <nav class="nav-links" id="navlinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="thesis.html">Thesis</a>
+      <a href="ventures.html">Ventures</a>
+      <a href="platform.html" aria-current="page">Platform</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="nav-right">
-      <a href="contact.html" class="btn btn-teal">Get in touch</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a href="contact.html" class="btn btn-teal">Get in touch <span class="arr" aria-hidden="true">→</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </header>
+
 <main id="main">
-<section class="phero"><div class="wrap reveal">
-  <span class="eyebrow">The shared foundation</span>
-  <h1>The platform every venture stands on.</h1>
-  <p>The unglamorous, decisive layer: sovereign compute, a security baseline, compliance scaffolding, and a cleared bench — built once, inherited by all.</p>
-</div></section>
 
-<section class="block"><div class="wrap"><div class="cols2">
-  <div class="reveal">
-    <div class="feat"><span class="fn">01</span><div><h3>Sovereign cloud</h3><p>Canadian-resident compute (Taiga) sized for regulated and classified workloads. Every venture deploys here by default — residency is never an afterthought.</p></div></div>
-    <div class="feat"><span class="fn">02</span><div><h3>Security baseline</h3><p>A hardened, audited starting posture every company inherits: identity, logging, threat detection, and incident response, ready before the first line of product.</p></div></div>
-    <div class="feat"><span class="fn">03</span><div><h3>Compliance &amp; clearance</h3><p>Privacy and threat-risk assessment templates, data-sharing agreements, and personnel clearance pathways — the gates that stop most vendors, cleared once for everyone.</p></div></div>
-    <div class="feat"><span class="fn">04</span><div><h3>Talent &amp; capital</h3><p>A pooled bench of cleared engineers and operators, and patient capital to fund the pilots and reviews that decide whether a venture lives.</p></div></div>
-    <div class="feat"><span class="fn">05</span><div><h3>Shared research</h3><p>Models, evaluation harnesses, and safety tooling developed once and reused — so each venture starts from the frontier, not from scratch.</p></div></div>
+<section class="phero" aria-labelledby="ph-h">
+  <div class="phero-meta" aria-hidden="true">
+    Document III · The Platform<br/>
+    <b>§ 01 / 04</b><br/>
+    Filed 2026.01
   </div>
-  <div class="plate-img reveal"><img src="assets/img/core.jpg" alt="A radial survey plate — the stable core cooling outward through deep time, the conceptual signature of Laurentia's shared foundation."/></div>
-</div></div></section>
-
-<div class="wrap reveal"><svg class="contour" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true">
-<path d="M0 60 Q150 30 300 48 T600 40 T900 52 T1200 38"/>
-<path d="M0 70 Q150 44 300 60 T600 54 T900 64 T1200 52"/>
-<path d="M0 50 Q150 18 300 36 T600 28 T900 40 T1200 26"/></svg></div>
-
-<section class="block"><div class="wrap">
-  <div class="sec-head reveal"><span class="eyebrow">How ventures inherit it</span><h2>From conviction to deployment in months.</h2>
-  <p>Because the foundation already exists, a new venture spends its early life on product and customers — not on rebuilding compliance, security, and infrastructure from zero.</p></div>
-  <div class="cols3">
-    <div class="pcard reveal"><div class="pnum">STEP 01</div><h3>Land on the platform</h3><p>The venture deploys into the sovereign cloud and inherits the security baseline on day one.</p></div>
-    <div class="pcard reveal"><div class="pnum">STEP 02</div><h3>Clear the gates</h3><p>Compliance and clearance scaffolding turns a months-long process into a checklist.</p></div>
-    <div class="pcard reveal"><div class="pnum">STEP 03</div><h3>Ship to a pilot</h3><p>With the foundation handled, the team proves the product where it matters — in a real deployment.</p></div>
+  <div class="wrap reveal">
+    <span class="eyebrow">The shared foundation</span>
+    <h1 id="ph-h">The platform every venture stands on.</h1>
+    <p>The unglamorous, decisive layer: sovereign compute, a security baseline, compliance scaffolding, and a cleared bench — built once, inherited by all.</p>
   </div>
-</div></section>
+</section>
 
-<section class="block tight"><div class="wrap"><div class="cta-big reveal">
-  <h2>Bring your venture onto the foundation.</h2>
-  <p>If the ground floor is what's slowing you down, that's exactly what we've already built.</p>
-  <a href="contact.html" class="btn btn-teal">Talk to us <span class="arr">→</span></a>
-</div></div></section>
-</main><footer class="site">
+<section class="block" aria-labelledby="layers-h">
+  <div class="wrap">
+    <h2 id="layers-h" class="sr-only" style="position:absolute;left:-9999px">Platform layers</h2>
+    <div class="cols2">
+      <div class="reveal" data-stagger>
+        <div class="feat reveal"><span class="fn">01</span><div><h3>Sovereign cloud</h3><p>Canadian-resident compute (Taiga) sized for regulated and classified workloads. Every venture deploys here by default — residency is never an afterthought.</p></div></div>
+        <div class="feat reveal"><span class="fn">02</span><div><h3>Security baseline</h3><p>A hardened, audited starting posture every company inherits: identity, logging, threat detection, and incident response, ready before the first line of product.</p></div></div>
+        <div class="feat reveal"><span class="fn">03</span><div><h3>Compliance &amp; clearance</h3><p>Privacy and threat-risk assessment templates, data-sharing agreements, and personnel clearance pathways — the gates that stop most vendors, cleared once for everyone.</p></div></div>
+        <div class="feat reveal"><span class="fn">04</span><div><h3>Talent &amp; capital</h3><p>A pooled bench of cleared engineers and operators, and patient capital to fund the pilots and reviews that decide whether a venture lives.</p></div></div>
+        <div class="feat reveal"><span class="fn">05</span><div><h3>Shared research</h3><p>Models, evaluation harnesses, and safety tooling developed once and reused — so each venture starts from the frontier, not from scratch.</p></div></div>
+      </div>
+      <div class="reveal">
+        <div class="plate-img">
+          <img src="assets/img/core.jpg" alt="A radial survey plate — the stable core cooling outward through deep time, the conceptual signature of Laurentia's shared foundation." loading="lazy" decoding="async"/>
+        </div>
+        <div class="plate-cap">
+          <span><b>Plate II</b> · Shared Core</span>
+          <span>L-02 · CORE SAMPLE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap reveal" aria-hidden="true">
+  <svg class="contour" viewBox="0 0 1200 80" preserveAspectRatio="none">
+    <path d="M0 60 Q150 30 300 48 T600 40 T900 52 T1200 38"/>
+    <path d="M0 70 Q150 44 300 60 T600 54 T900 64 T1200 52"/>
+    <path d="M0 50 Q150 18 300 36 T600 28 T900 40 T1200 26"/>
+  </svg>
+</div>
+
+<section class="block" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">§ 02 · How ventures inherit it</span>
+      <h2 id="how-h">From conviction to deployment in months.</h2>
+      <p>Because the foundation already exists, a new venture spends its early life on product and customers — not on rebuilding compliance, security, and infrastructure from zero.</p>
+    </div>
+    <div class="cols3" data-stagger>
+      <div class="pcard reveal"><div class="pnum">STEP 01</div><h3>Land on the platform</h3><p>The venture deploys into the sovereign cloud and inherits the security baseline on day one.</p></div>
+      <div class="pcard reveal"><div class="pnum">STEP 02</div><h3>Clear the gates</h3><p>Compliance and clearance scaffolding turns a months-long process into a checklist.</p></div>
+      <div class="pcard reveal"><div class="pnum">STEP 03</div><h3>Ship to a pilot</h3><p>With the foundation handled, the team proves the product where it matters — in a real deployment.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block tight">
+  <div class="wrap"><div class="cta-big reveal">
+    <span class="eyebrow">§ 03 · Engage</span>
+    <h2>Bring your venture onto the foundation.</h2>
+    <p>If the ground floor is what's slowing you down, that's exactly what we've already built.</p>
+    <a href="contact.html" class="btn btn-teal">Talk to us <span class="arr" aria-hidden="true">→</span></a>
+  </div></div>
+</section>
+
+</main>
+
+<footer class="site">
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="index.html" class="brand" aria-label="Laurentia home"><svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
-<circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
-<circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
-<circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/></svg><span class="wm">LAURENTIA</span></a>
+        <a href="index.html" class="brand" aria-label="Laurentia home">
+          <svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
+            <circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
+            <circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/>
+          </svg>
+          <span class="wm">LAURENTIA</span>
+        </a>
         <p>A sovereign-technology holding company building the foundations a nation stands on.</p>
       </div>
       <div class="foot-col"><h4>Ventures</h4><a href="ventures.html">Boreal</a><a href="ventures.html">Taiga</a><a href="ventures.html">Ironwood</a><a href="ventures.html">Aurora</a></div>
@@ -78,10 +132,21 @@
       <div class="foot-col"><h4>Connect</h4><a href="mailto:hello@laurentia.ca">hello@laurentia.ca</a><a href="contact.html">Partner with us</a><a href="contact.html">Careers</a></div>
     </div>
     <div class="foot-bot">
-      <span class="made"><svg class="leaf" viewBox="0 0 24 24"><path d="M12 2c2 5 6 6 9 6-1 7-5 11-9 14-4-3-8-7-9-14 3 0 7-1 9-6z"/></svg> Built in Canada</span>
+      <span class="made">
+        <svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2 5 6 6 9 6-1 7-5 11-9 14-4-3-8-7-9-14 3 0 7-1 9-6z"/></svg>
+        Built in Canada
+      </span>
       <span>© 2026 Laurentia Holdings · Toronto · Ottawa</span>
+    </div>
+    <div class="ledger" aria-hidden="true">
+      <span><b>Document</b> III — The Platform</span>
+      <span><b>Coord</b> 49°08′N · 94°31′W</span>
+      <span><b>Filed</b> 2026.01</span>
+      <span><b>Status</b> Operating</span>
     </div>
   </div>
 </footer>
+
 <script src="assets/app.js"></script>
-</body></html>
+</body>
+</html>

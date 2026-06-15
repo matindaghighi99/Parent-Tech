@@ -3,38 +3,59 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#06080D"/>
 <title>Laurentia — The foundation beneath the frontier</title>
 <meta name="description" content="A sovereign-technology holding company building the compute, intelligence, security, and energy a nation must own."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Jura:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/laurentia.css"/>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="index.html" class="brand" aria-label="Laurentia home"><svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
-<circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
-<circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
-<circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/></svg><span class="wm">LAURENTIA</span></a>
-    <nav class="nav-links" id="navlinks"><a href="index.html" aria-current="page">Home</a><a href="thesis.html">Thesis</a><a href="ventures.html">Ventures</a><a href="platform.html">Platform</a><a href="contact.html">Contact</a></nav>
+    <a href="index.html" class="brand" aria-label="Laurentia home">
+      <svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
+        <circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
+        <circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/>
+      </svg>
+      <span class="wm">LAURENTIA</span>
+    </a>
+    <nav class="nav-links" id="navlinks" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="thesis.html">Thesis</a>
+      <a href="ventures.html">Ventures</a>
+      <a href="platform.html">Platform</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="nav-right">
-      <a href="contact.html" class="btn btn-teal">Get in touch</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a href="contact.html" class="btn btn-teal">Get in touch <span class="arr" aria-hidden="true">→</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </header>
+
 <main id="main">
-<section class="hero">
-  <div class="hero-bg"><img src="assets/img/hero_bg.jpg" alt=""/></div>
+
+<section class="hero" aria-labelledby="hero-h">
+  <div class="hero-bg"><img src="assets/img/hero_bg.jpg" alt="" loading="eager" decoding="async"/></div>
   <canvas id="aura" aria-hidden="true"></canvas>
+  <div class="hero-meta" aria-hidden="true">
+    Plate I · Sovereign Foundations<br/>
+    49°08′N · 94°31′W<br/>
+    <b>EST. MMXXVI</b>
+  </div>
   <div class="wrap hero-inner reveal">
     <span class="hero-eyebrow eyebrow">Sovereign technology · est. 2026</span>
-    <h1><span class="thin">Laurentia</span>The foundation beneath the frontier.</h1>
+    <h1 id="hero-h"><span class="thin">Laurentia</span>The foundation beneath the frontier.</h1>
     <p class="lede">A nation cannot rent its core. Laurentia builds and operates the technologies a sovereign country must own — compute, intelligence, security, energy — as independent ventures grown on one shared foundation.</p>
     <div class="hero-actions">
-      <a href="ventures.html" class="btn btn-teal">Explore the ventures <span class="arr">→</span></a>
+      <a href="ventures.html" class="btn btn-teal">Explore the ventures <span class="arr" aria-hidden="true">→</span></a>
       <a href="thesis.html" class="btn btn-ghost">Read the thesis</a>
     </div>
     <div class="hero-foot">
@@ -52,126 +73,166 @@
   </div>
 </section>
 
-<div class="wrap reveal"><svg class="contour" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true">
-<path d="M0 60 Q150 30 300 48 T600 40 T900 52 T1200 38"/>
-<path d="M0 70 Q150 44 300 60 T600 54 T900 64 T1200 52"/>
-<path d="M0 50 Q150 18 300 36 T600 28 T900 40 T1200 26"/></svg></div>
+<div class="wrap reveal" aria-hidden="true">
+  <svg class="contour" viewBox="0 0 1200 80" preserveAspectRatio="none">
+    <path d="M0 60 Q150 30 300 48 T600 40 T900 52 T1200 38"/>
+    <path d="M0 70 Q150 44 300 60 T600 54 T900 64 T1200 52"/>
+    <path d="M0 50 Q150 18 300 36 T600 28 T900 40 T1200 26"/>
+  </svg>
+</div>
 
-<section class="block" id="foundation">
+<section class="block" id="foundation" aria-labelledby="foundation-h">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">The operating model</span>
-      <h2>One foundation. Many ventures.</h2>
+      <span class="eyebrow">§ 01 · The operating model</span>
+      <h2 id="foundation-h">One foundation. Many ventures.</h2>
       <p>Every Laurentia company inherits the same bedrock — sovereign cloud, a security baseline, compliance and clearance scaffolding, capital and talent. Each venture stands on its own; none rebuilds the ground floor.</p>
     </div>
-    <div class="substrate reveal">
-      <div class="layer"><span class="lx">04</span><div><h3>Ventures</h3><p>Boreal · Taiga · Ironwood · Aurora — independent companies, each owning a domain.</p></div></div>
-      <div class="layer"><span class="lx">03</span><div><h3>Shared platform</h3><p>Sovereign cloud, security baseline, and compliance scaffolding inherited on day one.</p></div></div>
-      <div class="layer"><span class="lx">02</span><div><h3>Capital &amp; talent</h3><p>Patient capital and a pooled bench of cleared engineers, designers, and operators.</p></div></div>
-      <div class="layer bedrock"><span class="lx">01</span><div><h3>The thesis — sovereign foundations</h3><p>The conviction that a nation must own its core technology. Everything grows from here.</p></div></div>
+    <div class="substrate reveal" data-stagger>
+      <div class="layer reveal"><span class="lx">04</span><div><h3>Ventures</h3><p>Boreal · Taiga · Ironwood · Aurora — independent companies, each owning a domain.</p></div></div>
+      <div class="layer reveal"><span class="lx">03</span><div><h3>Shared platform</h3><p>Sovereign cloud, security baseline, and compliance scaffolding inherited on day one.</p></div></div>
+      <div class="layer reveal"><span class="lx">02</span><div><h3>Capital &amp; talent</h3><p>Patient capital and a pooled bench of cleared engineers, designers, and operators.</p></div></div>
+      <div class="layer bedrock reveal"><span class="lx">01</span><div><h3>The thesis — sovereign foundations</h3><p>The conviction that a nation must own its core technology. Everything grows from here.</p></div></div>
     </div>
   </div>
 </section>
 
-<section class="block tight" id="glance">
+<section class="block tight" id="glance" aria-labelledby="glance-h">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">At a glance</span><h2>The system, in one frame.</h2></div>
-    <div class="bento reveal">
-      <div class="b b-big b-glow">
+    <div class="sec-head reveal"><span class="eyebrow">§ 02 · At a glance</span><h2 id="glance-h">The system, in one frame.</h2></div>
+    <div class="bento reveal" data-stagger>
+      <div class="b b-big b-glow reveal">
         <span class="btag">Sovereign by design</span>
         <h3>Own the core. Govern it at home. Build it to outlast.</h3>
         <p>Four ventures on one foundation — compute, intelligence, security, and energy, held and operated in Canada.</p>
       </div>
-      <div class="b"><div class="bnum">100<span class="u">%</span></div><div class="blab">Data &amp; operations resident in Canada</div></div>
-      <div class="b"><div class="bnum" data-count="4">0</div><div class="blab">Ventures on the shared foundation</div></div>
-      <div class="b b-wide b-boreal">
-        <svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true"><circle cx="26" cy="26" r="22" stroke="#2FE6C0" stroke-width="1.3"/><circle cx="26" cy="26" r="11" stroke="#8B7DF0" stroke-width="1.3" stroke-dasharray="3 4"/><circle cx="38" cy="14" r="4.5" fill="#2FE6C0"/></svg>
+      <div class="b reveal"><div class="bnum">100<span class="u">%</span></div><div class="blab">Data &amp; operations resident in Canada</div></div>
+      <div class="b reveal"><div class="bnum" data-count="4">0</div><div class="blab">Ventures on the shared foundation</div></div>
+      <div class="b b-wide b-boreal reveal">
+        <svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+          <circle cx="26" cy="26" r="22" stroke="#2FE6C0" stroke-width="1.3"/>
+          <circle cx="26" cy="26" r="11" stroke="#8B7DF0" stroke-width="1.3" stroke-dasharray="3 4"/>
+          <circle cx="38" cy="14" r="4.5" fill="#2FE6C0"/>
+        </svg>
         <div>
           <span class="btag">● Live now</span>
-          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:20px;margin-top:6px">Boreal — public-sector AI</div>
-          <a class="b-link" href="ventures.html">See the portfolio <span class="arr">→</span></a>
+          <div style="font-family:var(--f-display);font-weight:700;font-size:20px;margin-top:6px;letter-spacing:-.01em">Boreal — public-sector AI</div>
+          <a class="b-link" href="ventures.html">See the portfolio <span class="arr" aria-hidden="true">→</span></a>
         </div>
       </div>
-      <div class="b b-img"><img src="assets/img/core.jpg" alt="Radial survey plate of the Laurentia core sample."><div class="cap"><span class="btag">Core sample · L-02</span></div></div>
-      <div class="b"><span class="btag">Platform</span><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:18px;margin-top:12px;line-height:1.2">One foundation, inherited on day one.</div></div>
-      <div class="b"><span class="btag">49°08′N · 94°31′W</span><div class="blab" style="margin-top:auto">The craton beneath the frontier.</div></div>
+      <div class="b b-img reveal">
+        <img src="assets/img/core.jpg" alt="Radial survey plate of the Laurentia core sample." loading="lazy" decoding="async"/>
+        <div class="cap"><span class="btag">Core sample · L-02</span></div>
+      </div>
+      <div class="b reveal"><span class="btag">Platform</span><div style="font-family:var(--f-display);font-weight:700;font-size:18px;margin-top:12px;line-height:1.2;letter-spacing:-.005em">One foundation, inherited on day one.</div></div>
+      <div class="b reveal"><span class="btag">49°08′N · 94°31′W</span><div class="blab" style="margin-top:auto">The craton beneath the frontier.</div></div>
     </div>
   </div>
 </section>
 
-<section class="block tight" id="ventures">
+<section class="block tight" id="ventures" aria-labelledby="ventures-h">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="eyebrow">The portfolio</span><h2>Four foundations, four companies.</h2></div>
-    <div class="ventures">
+    <div class="sec-head reveal"><span class="eyebrow">§ 03 · The portfolio</span><h2 id="ventures-h">Four foundations, four companies.</h2></div>
+    <div class="ventures" data-stagger>
       <a class="vcard reveal" href="../boreal/index.html">
-      <div class="vtop"><svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-<circle cx="26" cy="26" r="22" stroke="#2FE6C0" stroke-width="1.3"/>
-<circle cx="26" cy="26" r="11" stroke="#8B7DF0" stroke-width="1.3" stroke-dasharray="3 4"/>
-<circle cx="38" cy="14" r="4.5" fill="#2FE6C0"/></svg><span class="status live">Live</span></div>
-      <div class="vname">Boreal</div>
-      <div class="vdomain">Public-sector AI</div>
-      <p class="vdesc">Claims-integrity and decision systems for Canadian government. Reads every record, surfaces the exceptions, explains each one.</p>
-      <span class="vlink teal">Visit Boreal <span class="arr">→</span></span>
-    </a>
+        <span class="vcoord" aria-hidden="true">L-01 · LIVE</span>
+        <div class="vtop">
+          <svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <circle cx="26" cy="26" r="22" stroke="#2FE6C0" stroke-width="1.3"/>
+            <circle cx="26" cy="26" r="11" stroke="#8B7DF0" stroke-width="1.3" stroke-dasharray="3 4"/>
+            <circle cx="38" cy="14" r="4.5" fill="#2FE6C0"/>
+          </svg>
+          <span class="status live">Live</span>
+        </div>
+        <div class="vname">Boreal</div>
+        <div class="vdomain">Public-sector AI</div>
+        <p class="vdesc">Claims-integrity and decision systems for Canadian government. Reads every record, surfaces the exceptions, explains each one.</p>
+        <span class="vlink teal">Visit Boreal <span class="arr" aria-hidden="true">→</span></span>
+      </a>
       <a class="vcard reveal" href="ventures.html">
-      <div class="vtop"><svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-<path d="M26 8 L40 24 H12 Z" stroke="#2FE6C0" stroke-width="1.3"/>
-<path d="M26 18 L42 36 H10 Z" stroke="#8B7DF0" stroke-width="1.3"/>
-<path d="M26 28 L44 46 H8 Z" stroke="#2FE6C0" stroke-width="1.3"/></svg><span class="status">Scaling</span></div>
-      <div class="vname">Taiga</div>
-      <div class="vdomain">Sovereign compute &amp; cloud</div>
-      <p class="vdesc">Canadian-resident infrastructure for regulated and classified workloads — the ground the other ventures run on.</p>
-      <span class="vlink">Learn more <span class="arr">→</span></span>
-    </a>
+        <span class="vcoord" aria-hidden="true">L-02 · SCALE</span>
+        <div class="vtop">
+          <svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <path d="M26 8 L40 24 H12 Z" stroke="#2FE6C0" stroke-width="1.3"/>
+            <path d="M26 18 L42 36 H10 Z" stroke="#8B7DF0" stroke-width="1.3"/>
+            <path d="M26 28 L44 46 H8 Z" stroke="#2FE6C0" stroke-width="1.3"/>
+          </svg>
+          <span class="status">Scaling</span>
+        </div>
+        <div class="vname">Taiga</div>
+        <div class="vdomain">Sovereign compute &amp; cloud</div>
+        <p class="vdesc">Canadian-resident infrastructure for regulated and classified workloads — the ground the other ventures run on.</p>
+        <span class="vlink">Learn more <span class="arr" aria-hidden="true">→</span></span>
+      </a>
       <a class="vcard reveal" href="ventures.html">
-      <div class="vtop"><svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-<path d="M26 5 L43 15 V37 L26 47 L9 37 V15 Z" stroke="#2FE6C0" stroke-width="1.3"/>
-<path d="M26 16 L34 21 V31 L26 36 L18 31 V21 Z" stroke="#8B7DF0" stroke-width="1.3"/>
-<circle cx="26" cy="26" r="2.6" fill="#2FE6C0"/></svg><span class="status">Building</span></div>
-      <div class="vname">Ironwood</div>
-      <div class="vdomain">Critical-infrastructure security</div>
-      <p class="vdesc">Threat detection and resilience for utilities, hospitals, and government networks under constant pressure.</p>
-      <span class="vlink">Learn more <span class="arr">→</span></span>
-    </a>
+        <span class="vcoord" aria-hidden="true">L-03 · BUILD</span>
+        <div class="vtop">
+          <svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <path d="M26 5 L43 15 V37 L26 47 L9 37 V15 Z" stroke="#2FE6C0" stroke-width="1.3"/>
+            <path d="M26 16 L34 21 V31 L26 36 L18 31 V21 Z" stroke="#8B7DF0" stroke-width="1.3"/>
+            <circle cx="26" cy="26" r="2.6" fill="#2FE6C0"/>
+          </svg>
+          <span class="status">Building</span>
+        </div>
+        <div class="vname">Ironwood</div>
+        <div class="vdomain">Critical-infrastructure security</div>
+        <p class="vdesc">Threat detection and resilience for utilities, hospitals, and government networks under constant pressure.</p>
+        <span class="vlink">Learn more <span class="arr" aria-hidden="true">→</span></span>
+      </a>
       <a class="vcard reveal" href="ventures.html">
-      <div class="vtop"><svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-<path d="M6 38 Q26 6 46 38" stroke="#2FE6C0" stroke-width="1.3"/>
-<path d="M11 40 Q26 16 41 40" stroke="#8B7DF0" stroke-width="1.3"/>
-<path d="M17 42 Q26 28 35 42" stroke="#2FE6C0" stroke-width="1.3"/>
-<circle cx="26" cy="44" r="2.4" fill="#2FE6C0"/></svg><span class="status">Incubating</span></div>
-      <div class="vname">Aurora</div>
-      <div class="vdomain">Grid &amp; energy intelligence</div>
-      <p class="vdesc">Forecasting and balancing for power systems straining under electrification and extreme weather.</p>
-      <span class="vlink">Learn more <span class="arr">→</span></span>
-    </a>
+        <span class="vcoord" aria-hidden="true">L-04 · INC</span>
+        <div class="vtop">
+          <svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <path d="M6 38 Q26 6 46 38" stroke="#2FE6C0" stroke-width="1.3"/>
+            <path d="M11 40 Q26 16 41 40" stroke="#8B7DF0" stroke-width="1.3"/>
+            <path d="M17 42 Q26 28 35 42" stroke="#2FE6C0" stroke-width="1.3"/>
+            <circle cx="26" cy="44" r="2.4" fill="#2FE6C0"/>
+          </svg>
+          <span class="status">Incubating</span>
+        </div>
+        <div class="vname">Aurora</div>
+        <div class="vdomain">Grid &amp; energy intelligence</div>
+        <p class="vdesc">Forecasting and balancing for power systems straining under electrification and extreme weather.</p>
+        <span class="vlink">Learn more <span class="arr" aria-hidden="true">→</span></span>
+      </a>
     </div>
   </div>
 </section>
 
-<section class="statband">
-  <div class="wrap"><div class="statgrid reveal">
-    <div class="s"><div class="num" data-count="4">0</div><div class="lab">Ventures operating on the shared foundation</div></div>
-    <div class="s"><div class="num">$400<span class="u">M+</span></div><div class="lab">In public spending Boreal's first product can scrutinise</div></div>
-    <div class="s"><div class="num">2<span class="u">HQ</span></div><div class="lab">Offices — Toronto and Ottawa</div></div>
-    <div class="s"><div class="num">100<span class="u">%</span></div><div class="lab">Data and operations resident in Canada</div></div>
-  </div></div>
+<section class="statband" aria-label="Key metrics">
+  <div class="wrap">
+    <div class="statgrid reveal" data-stagger>
+      <div class="s reveal"><div class="num" data-count="4">0</div><div class="lab">Ventures operating on the shared foundation</div></div>
+      <div class="s reveal"><div class="num">$400<span class="u">M+</span></div><div class="lab">In public spending Boreal's first product can scrutinise</div></div>
+      <div class="s reveal"><div class="num">2<span class="u">HQ</span></div><div class="lab">Offices — Toronto and Ottawa</div></div>
+      <div class="s reveal"><div class="num">100<span class="u">%</span></div><div class="lab">Data and operations resident in Canada</div></div>
+    </div>
+  </div>
 </section>
 
 <section class="block">
   <div class="wrap"><div class="cta-big reveal">
+    <span class="eyebrow">§ 04 · Engage</span>
     <h2>Build the foundation with us.</h2>
     <p>Partner, invest, or bring a venture onto the platform. We work with governments, operators, and founders who think in decades.</p>
-    <a href="contact.html" class="btn btn-teal">Start a conversation <span class="arr">→</span></a>
+    <a href="contact.html" class="btn btn-teal">Start a conversation <span class="arr" aria-hidden="true">→</span></a>
   </div></div>
 </section>
-</main><footer class="site">
+
+</main>
+
+<footer class="site">
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="index.html" class="brand" aria-label="Laurentia home"><svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
-<circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
-<circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
-<circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/></svg><span class="wm">LAURENTIA</span></a>
+        <a href="index.html" class="brand" aria-label="Laurentia home">
+          <svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
+            <circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
+            <circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/>
+          </svg>
+          <span class="wm">LAURENTIA</span>
+        </a>
         <p>A sovereign-technology holding company building the foundations a nation stands on.</p>
       </div>
       <div class="foot-col"><h4>Ventures</h4><a href="ventures.html">Boreal</a><a href="ventures.html">Taiga</a><a href="ventures.html">Ironwood</a><a href="ventures.html">Aurora</a></div>
@@ -179,10 +240,21 @@
       <div class="foot-col"><h4>Connect</h4><a href="mailto:hello@laurentia.ca">hello@laurentia.ca</a><a href="contact.html">Partner with us</a><a href="contact.html">Careers</a></div>
     </div>
     <div class="foot-bot">
-      <span class="made"><svg class="leaf" viewBox="0 0 24 24"><path d="M12 2c2 5 6 6 9 6-1 7-5 11-9 14-4-3-8-7-9-14 3 0 7-1 9-6z"/></svg> Built in Canada</span>
+      <span class="made">
+        <svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2 5 6 6 9 6-1 7-5 11-9 14-4-3-8-7-9-14 3 0 7-1 9-6z"/></svg>
+        Built in Canada
+      </span>
       <span>© 2026 Laurentia Holdings · Toronto · Ottawa</span>
+    </div>
+    <div class="ledger" aria-hidden="true">
+      <span><b>Plate</b> I — Sovereign Foundations</span>
+      <span><b>Coord</b> 49°08′N · 94°31′W</span>
+      <span><b>Build</b> 2026.01</span>
+      <span><b>Status</b> Operating</span>
     </div>
   </div>
 </footer>
+
 <script src="assets/app.js"></script>
-</body></html>
+</body>
+</html>

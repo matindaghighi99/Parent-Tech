@@ -3,92 +3,174 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#06080D"/>
 <title>Ventures — Laurentia</title>
 <meta name="description" content="Boreal, Taiga, Ironwood, and Aurora — the four ventures Laurentia builds and operates."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Jura:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/laurentia.css"/>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="index.html" class="brand" aria-label="Laurentia home"><svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
-<circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
-<circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
-<circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/></svg><span class="wm">LAURENTIA</span></a>
-    <nav class="nav-links" id="navlinks"><a href="index.html">Home</a><a href="thesis.html">Thesis</a><a href="ventures.html" aria-current="page">Ventures</a><a href="platform.html">Platform</a><a href="contact.html">Contact</a></nav>
+    <a href="index.html" class="brand" aria-label="Laurentia home">
+      <svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
+        <circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
+        <circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/>
+      </svg>
+      <span class="wm">LAURENTIA</span>
+    </a>
+    <nav class="nav-links" id="navlinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="thesis.html">Thesis</a>
+      <a href="ventures.html" aria-current="page">Ventures</a>
+      <a href="platform.html">Platform</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="nav-right">
-      <a href="contact.html" class="btn btn-teal">Get in touch</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a href="contact.html" class="btn btn-teal">Get in touch <span class="arr" aria-hidden="true">→</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
-</header><style>.vcard li{position:relative;padding-left:20px;color:var(--muted);font-size:14px}.vcard li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:2px;background:var(--teal)}</style>
-<main id="main">
-<section class="phero"><div class="wrap reveal">
-  <span class="eyebrow">The portfolio</span>
-  <h1>Four ventures, one foundation.</h1>
-  <p>Each Laurentia company owns a layer a sovereign nation can't outsource. They share a backbone; they stand alone in the market.</p>
-</div></section>
+</header>
 
-<section class="block"><div class="wrap"><div class="ventures">
-  <a class="vcard reveal" href="../boreal/index.html">
-        <div class="vtop"><svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-<circle cx="26" cy="26" r="22" stroke="#2FE6C0" stroke-width="1.3"/>
-<circle cx="26" cy="26" r="11" stroke="#8B7DF0" stroke-width="1.3" stroke-dasharray="3 4"/>
-<circle cx="38" cy="14" r="4.5" fill="#2FE6C0"/></svg><span class="status live">Live</span></div>
+<main id="main">
+
+<section class="phero" aria-labelledby="ph-h">
+  <div class="phero-meta" aria-hidden="true">
+    Document II · Portfolio<br/>
+    <b>04 / 04 venture seats</b><br/>
+    Filed 2026.01
+  </div>
+  <div class="wrap reveal">
+    <span class="eyebrow">The portfolio</span>
+    <h1 id="ph-h">Four ventures, one foundation.</h1>
+    <p>Each Laurentia company owns a layer a sovereign nation can't outsource. They share a backbone; they stand alone in the market.</p>
+  </div>
+</section>
+
+<section class="block" aria-label="Portfolio">
+  <div class="wrap">
+    <div class="ventures" data-stagger>
+
+      <a class="vcard reveal" href="../boreal/index.html">
+        <span class="vcoord" aria-hidden="true">L-01 · LIVE</span>
+        <div class="vtop">
+          <svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <circle cx="26" cy="26" r="22" stroke="#2FE6C0" stroke-width="1.3"/>
+            <circle cx="26" cy="26" r="11" stroke="#8B7DF0" stroke-width="1.3" stroke-dasharray="3 4"/>
+            <circle cx="38" cy="14" r="4.5" fill="#2FE6C0"/>
+          </svg>
+          <span class="status live">Live</span>
+        </div>
         <div class="vname">Boreal</div>
         <div class="vdomain">Public-sector AI · Live</div>
         <p class="vdesc">Boreal builds claims-integrity and decision systems for Canadian government. Its flagship engine, Probity, reviews every record, flags the anomalies an overstretched team can't reach, and explains each one in language an auditor can defend.</p>
-        <ul style="list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:9px"><li>Probity claims-integrity engine, in pilot pathway</li><li>PHIPA-aligned, deployed in-environment</li><li>The portfolio's first revenue venture</li></ul>
-        <span class="vlink teal" style="margin-top:24px">Visit Boreal →</span></a>
-  <a class="vcard reveal" href="contact.html">
-        <div class="vtop"><svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-<path d="M26 8 L40 24 H12 Z" stroke="#2FE6C0" stroke-width="1.3"/>
-<path d="M26 18 L42 36 H10 Z" stroke="#8B7DF0" stroke-width="1.3"/>
-<path d="M26 28 L44 46 H8 Z" stroke="#2FE6C0" stroke-width="1.3"/></svg><span class="status">Scaling</span></div>
+        <ul class="vlist">
+          <li>Probity claims-integrity engine, in pilot pathway</li>
+          <li>PHIPA-aligned, deployed in-environment</li>
+          <li>The portfolio's first revenue venture</li>
+        </ul>
+        <span class="vlink teal">Visit Boreal <span class="arr" aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="vcard reveal" href="contact.html">
+        <span class="vcoord" aria-hidden="true">L-02 · SCALE</span>
+        <div class="vtop">
+          <svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <path d="M26 8 L40 24 H12 Z" stroke="#2FE6C0" stroke-width="1.3"/>
+            <path d="M26 18 L42 36 H10 Z" stroke="#8B7DF0" stroke-width="1.3"/>
+            <path d="M26 28 L44 46 H8 Z" stroke="#2FE6C0" stroke-width="1.3"/>
+          </svg>
+          <span class="status">Scaling</span>
+        </div>
         <div class="vname">Taiga</div>
         <div class="vdomain">Sovereign compute &amp; cloud · Scaling</div>
         <p class="vdesc">Taiga stands up Canadian-resident compute and cloud for regulated and classified workloads — the literal ground the other ventures run on. Sovereignty starts with where the servers are.</p>
-        <ul style="list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:9px"><li>Data residency guaranteed in Canada</li><li>Built for regulated and cleared workloads</li><li>The foundation beneath Boreal, Ironwood, and Aurora</li></ul>
-        <span class="vlink" style="margin-top:24px">Inside the venture →</span></a>
-  <a class="vcard reveal" href="contact.html">
-        <div class="vtop"><svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-<path d="M26 5 L43 15 V37 L26 47 L9 37 V15 Z" stroke="#2FE6C0" stroke-width="1.3"/>
-<path d="M26 16 L34 21 V31 L26 36 L18 31 V21 Z" stroke="#8B7DF0" stroke-width="1.3"/>
-<circle cx="26" cy="26" r="2.6" fill="#2FE6C0"/></svg><span class="status">Building</span></div>
+        <ul class="vlist">
+          <li>Data residency guaranteed in Canada</li>
+          <li>Built for regulated and cleared workloads</li>
+          <li>The foundation beneath Boreal, Ironwood, and Aurora</li>
+        </ul>
+        <span class="vlink">Inside the venture <span class="arr" aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="vcard reveal" href="contact.html">
+        <span class="vcoord" aria-hidden="true">L-03 · BUILD</span>
+        <div class="vtop">
+          <svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <path d="M26 5 L43 15 V37 L26 47 L9 37 V15 Z" stroke="#2FE6C0" stroke-width="1.3"/>
+            <path d="M26 16 L34 21 V31 L26 36 L18 31 V21 Z" stroke="#8B7DF0" stroke-width="1.3"/>
+            <circle cx="26" cy="26" r="2.6" fill="#2FE6C0"/>
+          </svg>
+          <span class="status">Building</span>
+        </div>
         <div class="vname">Ironwood</div>
         <div class="vdomain">Critical-infrastructure security · Building</div>
         <p class="vdesc">Ironwood defends the networks a country can't afford to lose — utilities, hospitals, transit, and government — with detection and resilience tuned for operational technology, not just IT.</p>
-        <ul style="list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:9px"><li>Operational-technology threat detection</li><li>Resilience for utilities and health systems</li><li>Inherits Taiga residency and the shared baseline</li></ul>
-        <span class="vlink" style="margin-top:24px">Inside the venture →</span></a>
-  <a class="vcard reveal" href="contact.html">
-        <div class="vtop"><svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-<path d="M6 38 Q26 6 46 38" stroke="#2FE6C0" stroke-width="1.3"/>
-<path d="M11 40 Q26 16 41 40" stroke="#8B7DF0" stroke-width="1.3"/>
-<path d="M17 42 Q26 28 35 42" stroke="#2FE6C0" stroke-width="1.3"/>
-<circle cx="26" cy="44" r="2.4" fill="#2FE6C0"/></svg><span class="status">Incubating</span></div>
+        <ul class="vlist">
+          <li>Operational-technology threat detection</li>
+          <li>Resilience for utilities and health systems</li>
+          <li>Inherits Taiga residency and the shared baseline</li>
+        </ul>
+        <span class="vlink">Inside the venture <span class="arr" aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="vcard reveal" href="contact.html">
+        <span class="vcoord" aria-hidden="true">L-04 · INC</span>
+        <div class="vtop">
+          <svg class="emblem" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <path d="M6 38 Q26 6 46 38" stroke="#2FE6C0" stroke-width="1.3"/>
+            <path d="M11 40 Q26 16 41 40" stroke="#8B7DF0" stroke-width="1.3"/>
+            <path d="M17 42 Q26 28 35 42" stroke="#2FE6C0" stroke-width="1.3"/>
+            <circle cx="26" cy="44" r="2.4" fill="#2FE6C0"/>
+          </svg>
+          <span class="status">Incubating</span>
+        </div>
         <div class="vname">Aurora</div>
         <div class="vdomain">Grid &amp; energy intelligence · Incubating</div>
         <p class="vdesc">Aurora brings AI to power systems straining under electrification and extreme weather — forecasting demand, balancing supply, and keeping the lights on as the grid gets harder to run.</p>
-        <ul style="list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:9px"><li>Demand forecasting and load balancing</li><li>Resilience planning for extreme weather</li><li>Built on the same sovereign foundation</li></ul>
-        <span class="vlink" style="margin-top:24px">Inside the venture →</span></a>
-</div></div></section>
+        <ul class="vlist">
+          <li>Demand forecasting and load balancing</li>
+          <li>Resilience planning for extreme weather</li>
+          <li>Built on the same sovereign foundation</li>
+        </ul>
+        <span class="vlink">Inside the venture <span class="arr" aria-hidden="true">→</span></span>
+      </a>
 
-<section class="block tight"><div class="wrap"><div class="cta-big reveal">
-  <h2>Have a foundation to build?</h2>
-  <p>We bring select founders onto the platform. If you're building something a nation should own, we should talk.</p>
-  <a href="contact.html" class="btn btn-teal">Pitch a venture <span class="arr">→</span></a>
-</div></div></section>
-</main><footer class="site">
+    </div>
+  </div>
+</section>
+
+<section class="block tight">
+  <div class="wrap"><div class="cta-big reveal">
+    <span class="eyebrow">§ 02 · Engage</span>
+    <h2>Have a foundation to build?</h2>
+    <p>We bring select founders onto the platform. If you're building something a nation should own, we should talk.</p>
+    <a href="contact.html" class="btn btn-teal">Pitch a venture <span class="arr" aria-hidden="true">→</span></a>
+  </div></div>
+</section>
+
+</main>
+
+<footer class="site">
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="index.html" class="brand" aria-label="Laurentia home"><svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
-<circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
-<circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
-<circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/></svg><span class="wm">LAURENTIA</span></a>
+        <a href="index.html" class="brand" aria-label="Laurentia home">
+          <svg class="seal" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="14" fill="none" stroke="#E7EDF4" stroke-width="1.4"/>
+            <circle cx="16" cy="16" r="6.5" fill="none" stroke="#2FE6C0" stroke-width="1.4" stroke-dasharray="2.4 3"/>
+            <circle cx="23.5" cy="9" r="3" fill="#2FE6C0"/>
+          </svg>
+          <span class="wm">LAURENTIA</span>
+        </a>
         <p>A sovereign-technology holding company building the foundations a nation stands on.</p>
       </div>
       <div class="foot-col"><h4>Ventures</h4><a href="ventures.html">Boreal</a><a href="ventures.html">Taiga</a><a href="ventures.html">Ironwood</a><a href="ventures.html">Aurora</a></div>
@@ -96,10 +178,21 @@
       <div class="foot-col"><h4>Connect</h4><a href="mailto:hello@laurentia.ca">hello@laurentia.ca</a><a href="contact.html">Partner with us</a><a href="contact.html">Careers</a></div>
     </div>
     <div class="foot-bot">
-      <span class="made"><svg class="leaf" viewBox="0 0 24 24"><path d="M12 2c2 5 6 6 9 6-1 7-5 11-9 14-4-3-8-7-9-14 3 0 7-1 9-6z"/></svg> Built in Canada</span>
+      <span class="made">
+        <svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2 5 6 6 9 6-1 7-5 11-9 14-4-3-8-7-9-14 3 0 7-1 9-6z"/></svg>
+        Built in Canada
+      </span>
       <span>© 2026 Laurentia Holdings · Toronto · Ottawa</span>
+    </div>
+    <div class="ledger" aria-hidden="true">
+      <span><b>Document</b> II — Portfolio</span>
+      <span><b>Coord</b> 49°08′N · 94°31′W</span>
+      <span><b>Filed</b> 2026.01</span>
+      <span><b>Seats</b> 04 / 04</span>
     </div>
   </div>
 </footer>
+
 <script src="assets/app.js"></script>
-</body></html>
+</body>
+</html>
